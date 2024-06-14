@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.2.final using JasperReports Library version 6.21.2-8434a0bd7c3bbc37cbf916f2968d35e4b165821a  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4_5" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7b35b551-b4db-4dd7-a2d4-ba7389a6699a">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (4)"/>
+	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 1_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 1_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<queryString language="SQL">
+		<![CDATA[SELECT 
+    Appointments.Appointment_id,
+    Patient.Patient_name,
+    Patient.Patient_address,
+    Patient.Age,
+    Patient.Gender,
+    Patient.War_id,
+    Appointments.Doctor_id,
+    Appointments.DateAppoinment,  -- Check if the column name is correct
+    Appointments.Time
+FROM 
+    Appointments
+JOIN 
+    Patient ON Appointments.Patient_id = Patient.Patient_id;]]>
+	</queryString>
+	<field name="Appointment_id" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Appointment_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="Appointment_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Appointments"/>
+	</field>
+	<field name="Patient_name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Patient_name"/>
+		<property name="com.jaspersoft.studio.field.label" value="Patient_name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Patient"/>
+	</field>
+	<field name="Patient_address" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Patient_address"/>
+		<property name="com.jaspersoft.studio.field.label" value="Patient_address"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Patient"/>
+	</field>
+	<field name="Age" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Age"/>
+		<property name="com.jaspersoft.studio.field.label" value="Age"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Patient"/>
+	</field>
+	<field name="Gender" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Gender"/>
+		<property name="com.jaspersoft.studio.field.label" value="Gender"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Patient"/>
+	</field>
+	<field name="War_id" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="War_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="War_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Patient"/>
+	</field>
+	<field name="Doctor_id" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Doctor_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="Doctor_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Appointments"/>
+	</field>
+	<field name="DateAppoinment" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="DateAppoinment"/>
+		<property name="com.jaspersoft.studio.field.label" value="DateAppoinment"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Appointments"/>
+	</field>
+	<field name="Time" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Time"/>
+		<property name="com.jaspersoft.studio.field.label" value="Time"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Appointments"/>
+	</field>
+	<group name="Appointment_id">
+		<groupExpression><![CDATA[$F{Appointment_id}]]></groupExpression>
+	</group>
+	<group name="Patient_name">
+		<groupExpression><![CDATA[$F{Patient_name}]]></groupExpression>
+	</group>
+	<group name="Patient_address">
+		<groupExpression><![CDATA[$F{Patient_address}]]></groupExpression>
+	</group>
+	<group name="Age">
+		<groupExpression><![CDATA[$F{Age}]]></groupExpression>
+	</group>
+	<group name="Gender">
+		<groupExpression><![CDATA[$F{Gender}]]></groupExpression>
+	</group>
+	<group name="War_id">
+		<groupExpression><![CDATA[$F{War_id}]]></groupExpression>
+	</group>
+	<group name="Doctor_id">
+		<groupExpression><![CDATA[$F{Doctor_id}]]></groupExpression>
+	</group>
+	<group name="DateAppoinment">
+		<groupExpression><![CDATA[$F{DateAppoinment}]]></groupExpression>
+	</group>
+	<group name="Time">
+		<groupExpression><![CDATA[$F{Time}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="95" splitType="Stretch">
+			<staticText>
+				<reportElement x="193" y="10" width="215" height="30" uuid="c15bae68-92fc-48dd-b645-e68d38d86924"/>
+				<textElement verticalAlignment="Middle">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ayurveda Hospital]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="170" y="40" width="270" height="30" uuid="970c70db-4c4e-4c75-afb6-3baae00feb8c"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Hakamana road,Kaburupitiya]]></text>
+			</staticText>
+			<image>
+				<reportElement x="50" y="10" width="90" height="70" uuid="c497bb47-6451-4154-a519-5efdd02cbf1d"/>
+				<imageExpression><![CDATA["/home/praween/Documents/hospital_mangment/src/main/resources/image/360_F_489785277_bl4o9bYTVzvyf5yULI0n4puCtgISC9WO.jpg"]]></imageExpression>
+			</image>
+			<rectangle>
+				<reportElement x="140" y="60" width="299" height="1" uuid="b631c8b3-d24a-42a8-be23-4ef3fe6a4259"/>
+			</rectangle>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="90" splitType="Stretch">
+			<staticText>
+				<reportElement x="-20" y="0" width="90" height="30" uuid="1c2fe19b-9970-4e7b-bc36-5d3c85d7e563">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4c935777-0531-4016-8d39-aedd7f224969"/>
+				</reportElement>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Appointmentid]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="70" y="0" width="80" height="30" uuid="c49d0d2f-f9c9-4f53-bc0f-11c18ae5a6e1">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6fcf3772-d36b-4018-b06e-7d440a700ceb"/>
+				</reportElement>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Patientname]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="0" width="70" height="30" uuid="31dea103-26b9-4bfa-9184-2d95ebefe259">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e92701d9-022e-436b-9561-15ae63c3e274"/>
+				</reportElement>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Patientaddress]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="220" y="0" width="20" height="30" uuid="1ff1d3c4-70c7-418f-b436-ab176c5f6d80">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5a37ef7f-5352-4f51-b5b4-ecb4200e51e3"/>
+				</reportElement>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Age]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="240" y="0" width="48" height="30" uuid="2a0a4c82-dbbf-418f-b736-0e6123db2c1b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="752f2e0a-cd26-47b6-883f-06c4f8baab4a"/>
+				</reportElement>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Gender]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="288" y="0" width="55" height="30" uuid="b6ad41bb-64e3-4fcf-b50b-51f74d00a56f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7fd14954-c5f7-4818-8e6b-20a02f22a5a6"/>
+				</reportElement>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[War_id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="343" y="0" width="72" height="30" uuid="a4d48828-7165-4bd3-ae55-c9de161332f6">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c3ae9a14-ced6-4176-9b81-f5b8915f6f15"/>
+				</reportElement>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Doctor_id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="415" y="0" width="108" height="30" uuid="45a83248-7358-46be-a120-d609df35ba12">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="da01b81f-1674-4067-870f-5aaf03a01fcb"/>
+				</reportElement>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DateAppoinment]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="525" y="0" width="48" height="30" uuid="e6f0fab8-7ed9-466d-a14b-6b193799f37a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="19861bfd-ab57-43b5-9cf9-09a07a6a60ee"/>
+				</reportElement>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Time]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<textField>
+				<reportElement x="-20" y="0" width="90" height="30" uuid="3dba88fc-e8a4-4f25-a02d-679ff7fcb912">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4c935777-0531-4016-8d39-aedd7f224969"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Appointment_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="70" y="0" width="80" height="30" uuid="73bc7a5a-20d5-4e67-8fc1-8681d06fe5e6">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6fcf3772-d36b-4018-b06e-7d440a700ceb"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Patient_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="220" y="0" width="20" height="30" uuid="abb3ed3d-1af4-4ccf-b801-8565ebf1c635">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5a37ef7f-5352-4f51-b5b4-ecb4200e51e3"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Age}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="150" y="0" width="70" height="30" uuid="0c8a190b-8d01-45e6-b0d5-8da768e0ce83">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e92701d9-022e-436b-9561-15ae63c3e274"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Patient_address}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="240" y="0" width="48" height="30" uuid="42fc8d93-89f1-48d8-ad2f-91f487714597">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="752f2e0a-cd26-47b6-883f-06c4f8baab4a"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Gender}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="288" y="0" width="55" height="30" uuid="0cd5cae3-584c-46ca-8670-cf913b710ed9">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7fd14954-c5f7-4818-8e6b-20a02f22a5a6"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{War_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="343" y="0" width="72" height="30" uuid="5b63ad98-69db-47d1-8aa0-e35af5bd8610">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c3ae9a14-ced6-4176-9b81-f5b8915f6f15"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Doctor_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="415" y="0" width="110" height="30" uuid="c74469bf-c7e6-4567-ac68-a29115a1c661">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="da01b81f-1674-4067-870f-5aaf03a01fcb"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{DateAppoinment}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="525" y="0" width="50" height="30" uuid="0ab76ec4-caac-43ed-8c11-f4f17aadbac7">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="19861bfd-ab57-43b5-9cf9-09a07a6a60ee"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Time}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="61" splitType="Stretch">
+			<rectangle>
+				<reportElement x="150" y="40" width="288" height="1" uuid="492c92e1-9565-4a8d-8177-557294d1ee05"/>
+			</rectangle>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="49" splitType="Stretch">
+			<staticText>
+				<reportElement x="227" y="10" width="100" height="30" uuid="6a576edb-cbeb-44bf-a9ca-df4ad1bdaf62"/>
+				<textElement verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Thank You]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

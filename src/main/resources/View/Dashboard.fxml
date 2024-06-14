@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="810.0" prefWidth="1349.0" style="-fx-background-color: #e1e6eb;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.ayurvedic_hospital.controller.Dashboardcontroller">
+   <children>
+      <AnchorPane layoutY="-5.0" prefHeight="820.0" prefWidth="268.0" style="-fx-background-color: #0e68cf; -fx-background-radius: 0;">
+         <children>
+            <JFXButton buttonType="RAISED" contentDisplay="TOP" graphicTextGap="8.0" layoutX="26.0" layoutY="14.0" onAction="#btnwardOnAction" prefHeight="75.0" prefWidth="183.0" style="-fx-background-color: #306de5; -fx-background-radius: 30;" text="Ward" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+      
+                        <ImageView fitHeight="32.0" fitWidth="39.0" layoutX="47.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon/5074304.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" contentDisplay="TOP" layoutX="29.0" layoutY="98.0" onAction="#btnpatientOnAction" prefHeight="75.0" prefWidth="183.0" style="-fx-background-color: #306de5; -fx-background-radius: 30;" text="Patient" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="40.0" fitWidth="45.0" layoutX="40.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon/hospital-patient-icon.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" contentDisplay="TOP" layoutX="29.0" layoutY="184.0" onAction="#btnMedicenOnAction" prefHeight="75.0" prefWidth="183.0" style="-fx-background-color: #306de5; -fx-background-radius: 30;" text="Medicine" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="32.0" fitWidth="39.0" layoutX="40.0" layoutY="206.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon/medicine.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" contentDisplay="TOP" layoutX="26.0" layoutY="268.0" onAction="#btnAppoimentOnAction" prefHeight="75.0" prefWidth="183.0" style="-fx-background-color: #306de5; -fx-background-radius: 30;" text="Appoiment" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="40.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon/medical_appointment.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" contentDisplay="TOP" layoutX="26.0" layoutY="355.0" onAction="#btnDoctorOnAction" prefHeight="75.0" prefWidth="183.0" style="-fx-background-color: #306de5; -fx-background-radius: 30;" text="Doctor" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="32.0" fitWidth="39.0" layoutX="40.0" layoutY="377.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon/9856850.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" contentDisplay="TOP" layoutX="29.0" layoutY="438.0" onAction="#btnemployeeOnAction" prefHeight="75.0" prefWidth="183.0" style="-fx-background-color: #306de5; -fx-background-radius: 30;" text="Employee" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="32.0" fitWidth="39.0" layoutX="40.0" layoutY="460.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon/13794667.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" contentDisplay="TOP" layoutX="35.0" layoutY="523.0" onAction="#btnplaceAppointmentOnAction" prefHeight="75.0" prefWidth="183.0" style="-fx-background-color: #306de5; -fx-background-radius: 30;" text="      place prescription" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" contentDisplay="TOP" layoutX="35.0" layoutY="622.0" onAction="#btnExitOnAction" prefHeight="75.0" prefWidth="183.0" style="-fx-background-color: #306de5; -fx-background-radius: 30;" text="Exit" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="37.0" layoutY="541.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon/download%20(7).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="59.0" fitWidth="53.0" layoutX="43.0" layoutY="633.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon/exit.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="mainancorpane" layoutX="265.0" layoutY="2.0" prefHeight="815.0" prefWidth="1083.0">
+         <children>
+            <ImageView fitHeight="830.0" fitWidth="1084.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/360_F_489785277_bl4o9bYTVzvyf5yULI0n4puCtgISC9WO.jpg" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="7.0" layoutY="51.0" prefHeight="131.0" prefWidth="243.0" style="-fx-background-color: #bdc3c7; -fx-background-radius: 30;">
+               <children>
+                  <Label layoutX="53.0" layoutY="14.0" text="Employee Count">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblEmployeeCount" layoutX="99.0" layoutY="50.0" text="15" textFill="#030000">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="158.0" fitWidth="1.0" layoutX="-4.0" layoutY="-55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/360_F_489785277_bl4o9bYTVzvyf5yULI0n4puCtgISC9WO.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="-4.0" layoutY="-51.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="-4.0" layoutY="-51.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="541.0" layoutY="51.0" prefHeight="131.0" prefWidth="243.0" style="-fx-background-color: #bdc3c7; -fx-background-radius: 30;">
+               <children>
+                  <Label layoutX="53.0" layoutY="14.0" text="Patient count">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblpatientcount" layoutX="99.0" layoutY="50.0" text="15" textFill="#030000">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="824.0" layoutY="51.0" prefHeight="131.0" prefWidth="243.0" style="-fx-background-color: #bdc3c7; -fx-background-radius: 30;">
+               <children>
+                  <Label layoutX="35.0" layoutY="21.0" text="Appointment count">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblappointmentcount" layoutX="99.0" layoutY="50.0" text="15" textFill="#030000">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label fx:id="lblDate" layoutX="797.0" layoutY="5.0" prefHeight="40.0" prefWidth="268.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTime" layoutX="14.0" layoutY="11.0" prefHeight="32.0" prefWidth="183.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="269.0" layoutY="51.0" prefHeight="131.0" prefWidth="243.0" style="-fx-background-color: #bdc3c7; -fx-background-radius: 30;">
+               <children>
+                  <Label layoutX="53.0" layoutY="14.0" text="Doctor Count">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblDoctorCount" layoutX="99.0" layoutY="50.0" text="15" textFill="#030000">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
